@@ -306,6 +306,9 @@ sup {
     display: flex;
     flex-wrap: wrap;
 }
+#project1 .galleryImages h2 {
+    flex: 0 1 100%;
+}
 
 #project1 .galleryImages figure {
     max-height: 100px;
@@ -370,8 +373,14 @@ sup {
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
-
+#project1 .fullresImage h2 {
+    z-index: 2;
+    color: var(--palette-color-500);
+    background: var(--palette-color-100);
+    padding: 0.25em;
+}
 #project1 .fullresImage figure {
     position: relative;
     display: flex;

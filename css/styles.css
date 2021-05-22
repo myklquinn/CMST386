@@ -1,0 +1,158 @@
+html, body {
+	height: 100%;
+	margin: 0;
+}
+body {
+	background: rgba(170,170,170,1);
+	color: rgba(255,255,255,1);
+	display: flex;
+	font-family: 'Montserrat', sans-serif;
+}
+.container {
+	position: relative;
+	max-width: 800px;
+	width: 100%;
+	margin: 0 auto;
+	height: 100%;
+	min-height: 100%;
+	background: rgba(0, 0, 0, 1);
+	padding: 50px;
+	top: 0;
+	box-shadow: 0 0 30px 30px rgb(85, 85, 85);
+}
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(7, 1fr);
+	gap: 10px 0px;
+	grid-template-areas:
+	"Header"
+	"Subheader"
+	"btn-1"
+	"btn-2"
+	"btn-3 "
+	"btn-4"
+	"footer";
+	position: relative;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    max-height: 500px;
+}
+.header { grid-area: Header; }
+.subheader { grid-area: Subheader; }
+.btn-1 { grid-area: btn-1; }
+.btn-2 { grid-area: btn-2; }
+.btn-3 { grid-area: btn-3; }
+.btn-4 { grid-area: btn-4; }
+.footer { grid-area: footer; }
+
+.grid-container div {
+    display: flex;
+    margin: 10px 10px 0 10px;
+}
+  
+a {
+	background: rgba(255, 255, 255, 1);
+	color: rgba(255, 255, 255, 1);
+	line-height: 1.5;
+	padding: .25em;
+	text-decoration: none;
+}
+
+.header img {
+	height: 80px;
+	width: 80px;
+    margin-right: 15px;
+}
+
+.quote {
+    border: 1px solid white;
+    padding: 25px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    overflow: hidden;
+    position: relative;
+    height: fit-content;
+}
+
+.quote:before {
+    background-image: url(https://www.freevector.com/uploads/vector/preview/23958/DD-Space-Background-77090-Preview.jpg);
+    font-weight: 400;
+    background-position: center;
+    background-size: cover;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+
+.projectLinks {
+	padding: 10px;
+	margin: 10px;
+	background: rgba(31, 97, 141,1);
+	font-weight: 100;
+    color: #fff;
+	cursor: pointer;
+	font-size:16px;
+	font-weight: 400;
+/* 	max-width: 160px;  */
+	max-height: 25px;
+	position: relative;
+	text-decoration: none;
+	text-transform: uppercase;
+    text-align: center;
+}
+
+.projectLinks svg {
+    height: 45px;
+    left: 0;
+    position: absolute;
+    top: 0; 
+    width: 100%; 
+}
+  
+.projectLinks rect {
+    fill: none;
+    stroke: #fff;
+    stroke-width: 2;
+    stroke-dasharray: 422, 0;
+    transition: all 0.35s linear;
+}
+
+.projectLinks:hover {
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.projectLinks:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 15, 310;
+    stroke-dashoffset: 48;
+    transition: all 1.35s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@media only screen and (min-width: 800px) {    
+    .grid-container {
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: repeat(4, 1fr);
+		grid-template-areas:
+		"Header Header Header Header"
+		"Subheader Subheader Subheader Subheader"
+		"btn-1 btn-2 btn-3 btn-4"
+		"footer footer footer footer";
+		max-width: 800px;
+	}
+}
+
+@media only screen and (max-width: 750px) {    
+    .header h1{
+	    margin: 0;
+	    font-size: 1.5em
+    }
+}

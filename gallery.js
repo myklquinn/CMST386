@@ -21,8 +21,10 @@ if (window.location.pathname.indexOf("gallery.html") != -1) {
     document.querySelectorAll(".galleryImages a").forEach((a)=> {
         a.addEventListener("click", (evt) => {
             fullresImage.src = a.getAttribute("data-src")
+            fullresImage.classList.toggle("imgLoading")
             fullresCaption.innerText = a.querySelector("figcaption").innerText
             fullresContainer.classList.toggle("fullresVisible")
+            fullresImage.onload = () => { fullresImage.classList.toggle("imgLoading") }
         })
     })
 }

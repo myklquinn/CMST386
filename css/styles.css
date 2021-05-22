@@ -393,6 +393,11 @@ sup {
     max-height: 90vh;
     position: relative;
 }
+
+#project1 .fullresImage .imageLoading {
+    transform: scale(0);
+}
+
 #project1 .fullresImage:before {
     background-color: black;
     content: '';

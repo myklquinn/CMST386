@@ -394,7 +394,7 @@ sup {
     position: relative;
 }
 
-#project1 .fullresImage .imageLoading {
+#project1 .fullresImage .imgLoading {
     transform: scale(0);
 }
 

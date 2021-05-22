@@ -245,6 +245,10 @@ sup {
     padding: 0 1em;
 }
 
+#project1 .twoColumns h2{
+    grid-area: h2;
+}
+
 #project1 article * {
     margin: 0;
     padding: 0;
@@ -495,6 +499,10 @@ sup {
         grid-gap: 0.5em;
         justify-content: space-evenly;
         width: 100%;
+        grid-template-areas:
+        "h2 h2"
+        ". ."
+        ". .";
     }
 }
 @media only screen and (max-width: 450px) {

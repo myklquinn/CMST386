@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Introduction to search engines: Using meta tags and hierarchy to optimize your site for search engine crawlers.">
+    <meta name="keywords" content="search engines, search engine optimization, SEO, meta, meta tags, meta keywords, meta description, meta usage, html, html5, web development, web coding">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <meta name="revisit-after" content="30 days">
+    <meta name="author" content="Mykl Quinn">
+    <title>CMST386 - Mykl Quinn - Project 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
+    <script src="gallery.js" defer></script>
+</head>
+<body id="project1">
+    <main>
+        <header>
+            <h1>Image Gallery</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a href="project1.html">Project 1 &#10095;</a>
+                        <ul class="active"><li><a href="gallery.html">Gallery</a></li></ul>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <section><h2>Click on an image to enlage.</h2></section>
+        <section class="galleryImages">
+            <figure>
+                <a href="#" data-src="imgs/image1_600px.jpeg" title="Full resolution image">
+                    <img src="imgs/image1_min.jpeg" alt="Statue Image">
+                    <figcaption>Classical Style Bronze Statue</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="#" data-src="imgs/image2_600px.jpeg" title="Full resolution image">
+                    <img src="imgs/image2_min.jpeg" alt="Pagoda Lantern">
+                    <figcaption>Hanging Pagoda Lantern</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="#" data-src="imgs/image3_600px.jpeg"title="Full resolution image">
+                    <img src="imgs/image3_min.jpeg" alt="Polkadot Pumpkin Lights">
+                    <figcaption>Polkadot Pumpkin Lights</figcaption>
+                </a>
+            </figure>
+            <figure>
+                <a href="#" data-src="imgs/image4_600px.jpeg" title="Full resolution image">
+                    <img src="imgs/image4_min.jpeg" alt="Bulgarian St. Stephen Church Balat, Turkey">
+                    <figcaption>Bulgarian St. Stephen Church</figcaption>
+                </a>
+            </figure>
+        </section>
+        <section class="fullresImage">
+            <figure>
+                <span>X</span>
+                <img alt="Full Resolution Image">
+                <figcaption></figcaption>
+            </figure>
+        </section>
+
+        <footer>Created by Mykl Quinn - 2021</footer>
+    </main>
+</body>
+</html>

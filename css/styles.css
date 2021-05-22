@@ -343,6 +343,9 @@ sup {
     transform: scaleY(0);
     z-index: 1;
 }
+#project1 .galleryImages .mobileCaption {
+    transform: scaleY(1);
+}
 
 #project1 .galleryImages figure:hover figcaption, #project1 .galleryImages figure:focus figcaption {
     transform: scaleY(1);

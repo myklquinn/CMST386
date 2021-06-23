@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Preprocessing - SASS</title>
+    <link rel="stylesheet" href="css/project3.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="project3.scss"> -->
+    <script src="project3.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="headerContainer">
+            <nav>
+                <ul class="fa fa-bars" id="menuList">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="project3.html">Project 3</a></li>
+                    <li class="active"><a href="#">Preprocessing</a></li>
+                </ul>
+            </nav>
+            <h1>CSS Pre-processing</h1>
+            <ul class="breadcrumb">
+                <li><a href="index.html">Projects Home</a></li>
+                <li><a href="project3.html">Project 3</a></li>
+                <li><a href="#">Preprocessing</a></li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <article class="twoCols">
+            <section>
+                <h2>Client vs. Server-Side Implementation</h2>
+                <p>There are two primary CSS pre-processing methods: LESS and SASS. LESS is a JavaScript library and is, therefore, processed client-side. Sass, on the other hand, runs on Ruby and is processed server-side. A lot of developers might not choose LESS because of the additional time needed for the JavaScript engine to process the code and output the modified CSS to the browser.<sup><a href="#ref1">1</a></sup> For this project, I used a SASS live-compiler extension in Visual Studio Code to create the compiled CSS file.</p>
+            </section>
+            <section class="twoCols">
+                <h2>Nested Rules</h2>
+                <p>Sass will let you nest your CSS selectors in a way that follows the same visual hierarchy of your HTML. Be aware that overly nested rules will result in over-qualified CSS that could prove hard to maintain and is generally considered bad practice.<sup><a href="#ref2">2</a></sup></p>
+                <a href="imgs/nested_rules.jpg"><img src="imgs/nested_rules.jpg" alt="Sass Nested Rules Example" /></a>
+            </section>
+            <section>
+                <h2>Mixins</h2>
+                <p>Some things in CSS are a bit tedious to write, especially with CSS3 and the many vendor prefixes that exist. A mixin lets you make groups of CSS declarations that you want to reuse throughout your site. You can even pass in values to make your mixin more flexible.<sup><a href="#ref2">2</a></sup> For this project, a mixin was used to create the progressive transition delay used to expand and collapse the "hamburger" menu.</p>
+            </section>
+            <section>
+                <h2>Variables</h2>
+                <p>Think of variables as a way to store information that you want to reuse throughout your stylesheet. You can store things like colors, font stacks, or any CSS value you think you'll want to reuse. Sass uses the $ symbol to make something a variable.<sup><a href="#ref2">2</a></sup> My SASS file used variables to define the palette colors and the gradient used in the text clip-fill and button background.</p>
+            </section>
+
+        </article>
+        <article class="references">
+            <h3>References</h3>
+            <ol class="apaCitation">
+                <li id="ref1">Hixon, J. (2011, September 9). An Introduction To LESS, And LESS Vs Sass. Smashing Magazine. <a href="https://bit.ly/3gWxRYh">https://bit.ly/3gWxRYh</a></li>
+                <li id="ref2">Sass. (n.d.). Sass: Sass Basics. Retrieved June 23, 2021, from <a href="https://bit.ly/3A1pyDl">https://bit.ly/3A1pyDl</a></li>
+            </ol>
+        </article>
+
+    </main>
+    <footer>
+        <div class="footerContainer">
+            <h4>Created by Mykl Quinn - 2021</h4>
+        </div>
+    </footer>
+</body>
+</html>

@@ -75,6 +75,7 @@ body, body * {
 
     img {
         padding: 0;
+        cursor: pointer;
     }
 }
 header, footer, main {
@@ -450,6 +451,10 @@ main {
 
         }
     }
+
+    .homeInfo > h2, .gnomeInfo > h2, .shoppingGrid > h2 {
+        display: none;
+    }
         
 }
 
@@ -516,7 +521,7 @@ form {
         margin-top: 2em;
     }
     
-    & input[type='submit'], input[type='button'] {
+    & input[type='submit'], input[type='reset'] {
         max-width: 10em;
         margin: 0 1em;
     }

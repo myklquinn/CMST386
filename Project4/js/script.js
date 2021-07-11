@@ -8,6 +8,24 @@ var nowP = document.createElement("p")
 nowP.innerText = now
 footer.append(nowP)
 
+var imgs = document.querySelectorAll("img")
+
+imgs.forEach(a=> {
+    if (a.src.indexOf(".svg") != -1) return;
+    if (a.src.indexOf("gnomes_logo_100px.png") != -1) {
+        a.addEventListener("click", function() {
+            console.log("logo clicked");
+            window.open("index.html", "_self");
+        }, false);
+    } else {
+        a.addEventListener("click", function() {
+            window.open(a.src, "_blank");
+        }, false );
+    }
+})
+
+
+
 submitForm = function(evt) {
     
 

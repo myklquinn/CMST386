@@ -53,6 +53,7 @@ body, body * {
 
 body img, body * img {
   padding: 0;
+  cursor: pointer;
 }
 
 header, footer, main {
@@ -546,6 +547,10 @@ main .discoverLink:active {
           box-shadow: 0 0 20px var(--palette-color4);
 }
 
+main .homeInfo > h2, main .gnomeInfo > h2, main .shoppingGrid > h2 {
+  display: none;
+}
+
 form {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -634,7 +639,7 @@ form .buttonContainer {
   margin-top: 2em;
 }
 
-form input[type='submit'], form input[type='button'] {
+form input[type='submit'], form input[type='reset'] {
   max-width: 10em;
   margin: 0 1em;
 }
@@ -748,11 +753,11 @@ footer a {
     margin: 1em auto;
   }
   .twoCols {
-    /* -ms-grid-columns: (1fr)[2]; */
+    -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
   }
   .threeCols {
-    /* -ms-grid-columns: (1fr)[3]; */
+    -ms-grid-columns: (1fr)[3];
         grid-template-columns: repeat(3, 1fr);
   }
   .highlight {

@@ -33,7 +33,6 @@ $palette-color4-christmas: #bc8cd8;
     --palette-color3: hsl(358, 75%, 42%);
     --palette-color4: hsl(0, 0%, 65%);
     --palette-color5: hsl(166, 41%, 28%);
-    --palette-graident: linear-gradient(45deg, var(--palette-color1), var(--palette-color2),var(--palette-color3),var(--palette-color4));
 }
 
 .us-independence-day {
@@ -258,7 +257,7 @@ nav {
             flex-flow: column;
             top: 100%;
             left: 0;
-            width: content;
+            width: fit-content;
             // transform: scaleY(1);
             // transform-origin: top;
             // overflow: hidden;

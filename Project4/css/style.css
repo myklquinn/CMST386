@@ -9,7 +9,6 @@
   --palette-color3: hsl(358, 75%, 42%);
   --palette-color4: hsl(0, 0%, 65%);
   --palette-color5: hsl(166, 41%, 28%);
-  --palette-graident: linear-gradient(45deg, var(--palette-color1), var(--palette-color2),var(--palette-color3),var(--palette-color4));
 }
 
 .us-independence-day {
@@ -341,7 +340,9 @@ nav .sub-menu1 ul {
           flex-flow: column;
   top: 100%;
   left: 0;
-  width: content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
   max-width: 0;
   max-height: 0;
   padding: 0;
@@ -802,11 +803,11 @@ footer a {
     margin: 1em auto;
   }
   .twoCols {
-    -ms-grid-columns: (1fr)[2];
+    /* -ms-grid-columns: (1fr)[2]; */
         grid-template-columns: repeat(2, 1fr);
   }
   .threeCols {
-    -ms-grid-columns: (1fr)[3];
+    /* -ms-grid-columns: (1fr)[3]; */
         grid-template-columns: repeat(3, 1fr);
   }
   .highlight {

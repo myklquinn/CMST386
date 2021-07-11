@@ -44,54 +44,56 @@
 		<article>
 			<h2>Have a question? Contact us using the form below.</h2>
             <form action="mailto:mquinn14@student.umgc.edu?subject=Stuttgart%20Gnomes%20Customer%20Contact" method="post" enctype="text/plain">
-                <legend><h3>Contact us</h3></legend>
-                <div>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Enter your name..." tabindex="1">
-                </div>
-                <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" placeholder="Enter your email..." tabindex="2">
-                </div>
-                <div>
-                <label for="phone">Phone:</label>
-                <input type="tel" name="phone" id="phone" placeholder="Enter your phone number..." tabindex="3">
-                </div>
-                <div>
-                <label for="request">Request:</label>
-                <select name="request" id="request" aria-label="Select a request type" tabindex="4">
-                    <option value="" disabled selected>Select your option</option>
-                    <option value="General Inquiry">General Inquiry</option>
-                    <option value="Custom Order">Custom Order</option>
-                    <option value="Order Inquiry">Order Inquiry</option>
-                    <option value="Billing Question">Billing Question</option>
-                    <option value="Other">Other</option>
-                </select>
-                </div>
-                <p>Contact Method:</p>
-                <div class="contactMethod">
-                    <label for="method_phone">Phone</label>
-                    <input type="radio" name="method" id="method_phone" value="phone" tabindex="5">
-                    <label for="method_email">Email</label>
-                    <input type="radio" name="method" id="method_email" value="email" checked tabindex="6">
-                </div>
-                <div>
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message" cols="30" rows="5" placeholder="Type your message here..."></textarea>
-                </div>
-                <div class="formCheckboxes">
-                    <input type="checkbox" name="privacyCheck" id="privacyCheck">
-                    <label for="privacyCheck">I have read the <a href="privacy.html">privacy</a> terms and conditions.<span class="privacyError"><br/>*You must confirm you have read the privacy terms and conditions to continue</span></label>
-                    
-                </div>
-                <div class="formCheckboxes">
-                    <input type="checkbox" name="promoCheck" id="promoCheck" checked>
-                    <label for="promoCheck">I would like to be contacted about special promotions and offers.</label>
-                </div>
-                <div class="buttonContainer">
-                    <input type="reset" name="reset" id="reset">
-                    <input type="submit" name="submit" id="submit">
-                </div>
+                <fieldset>
+                    <legend><h3>Contact us</h3></legend>
+                    <div>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name..." tabindex="1">
+                    </div>
+                    <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email..." tabindex="2">
+                    </div>
+                    <div>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Enter your phone number..." tabindex="3">
+                    </div>
+                    <div>
+                    <label for="request">Request:</label>
+                    <select name="request" id="request" aria-label="Select a request type" tabindex="4">
+                        <option value="" disabled selected>Select your option</option>
+                        <option value="General Inquiry">General Inquiry</option>
+                        <option value="Custom Order">Custom Order</option>
+                        <option value="Order Inquiry">Order Inquiry</option>
+                        <option value="Billing Question">Billing Question</option>
+                        <option value="Other">Other</option>
+                    </select>
+                    </div>
+                    <p>Contact Method:</p>
+                    <div class="contactMethod">
+                        <label for="method_phone">Phone</label>
+                        <input type="radio" name="method" id="method_phone" value="phone" tabindex="5">
+                        <label for="method_email">Email</label>
+                        <input type="radio" name="method" id="method_email" value="email" checked tabindex="6">
+                    </div>
+                    <div>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" cols="30" rows="5" placeholder="Type your message here..."></textarea>
+                    </div>
+                    <div class="formCheckboxes">
+                        <input type="checkbox" name="privacyCheck" id="privacyCheck">
+                        <label for="privacyCheck">I have read the <a href="privacy.html">privacy</a> terms and conditions.<span class="privacyError"><br/>*You must confirm you have read the privacy terms and conditions to continue</span></label>
+                        
+                    </div>
+                    <div class="formCheckboxes">
+                        <input type="checkbox" name="promoCheck" id="promoCheck" checked>
+                        <label for="promoCheck">I would like to be contacted about special promotions and offers.</label>
+                    </div>
+                    <div class="buttonContainer">
+                        <input type="reset" name="reset" id="reset">
+                        <input type="submit" name="submit" id="submit">
+                    </div>
+                </fieldset>
             </form>
 		</article>
 	</main>

@@ -551,7 +551,7 @@ main .homeInfo > h2, main .gnomeInfo > h2, main .shoppingGrid > h2 {
   display: none;
 }
 
-form {
+form fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -562,9 +562,10 @@ form {
   padding: 1em 0.5em;
   font-size: 1.5em;
   color: var(--accent-color-1);
+  margin-bottom: 1em;
 }
 
-form > * {
+form fieldset > * {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -575,22 +576,22 @@ form > * {
   margin-top: 0.5em;
 }
 
-form *:not(label) {
+form fieldset *:not(label) {
   width: 100%;
 }
 
-form input, form select, form textarea {
+form fieldset input, form fieldset select, form fieldset textarea {
   min-height: 2em;
   font-size: 0.75em;
 }
 
-form input[type='radio'], form select[type='radio'], form textarea[type='radio'] {
+form fieldset input[type='radio'], form fieldset select[type='radio'], form fieldset textarea[type='radio'] {
   font-size: 0.5em;
   line-height: 2em;
   margin: 0 2em;
 }
 
-form .contactMethod {
+form fieldset .contactMethod {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -606,13 +607,13 @@ form .contactMethod {
   margin: 0 0 0 1em;
 }
 
-form .contactMethod * {
+form fieldset .contactMethod * {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
 }
 
-form .formCheckboxes {
+form fieldset .formCheckboxes {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -621,49 +622,49 @@ form .formCheckboxes {
   font-size: 1rem;
 }
 
-form .formCheckboxes input {
+form fieldset .formCheckboxes input {
   max-width: 100px;
 }
 
-form .formCheckboxes label {
+form fieldset .formCheckboxes label {
   width: 100%;
   max-width: -webkit-fit-content;
   max-width: -moz-fit-content;
   max-width: fit-content;
 }
 
-form .buttonContainer {
+form fieldset .buttonContainer {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
   margin-top: 2em;
 }
 
-form input[type='submit'], form input[type='reset'] {
+form fieldset input[type='submit'], form fieldset input[type='reset'] {
   max-width: 10em;
   margin: 0 1em;
 }
 
-form .privacyError {
+form fieldset .privacyError {
   display: none;
 }
 
-form .error, form .error::-webkit-input-placeholder {
+form fieldset .error, form fieldset .error::-webkit-input-placeholder {
   color: red;
   display: inline;
 }
 
-form .error, form .error:-ms-input-placeholder {
+form fieldset .error, form fieldset .error:-ms-input-placeholder {
   color: red;
   display: inline;
 }
 
-form .error, form .error::-ms-input-placeholder {
+form fieldset .error, form fieldset .error::-ms-input-placeholder {
   color: red;
   display: inline;
 }
 
-form .error, form .error::placeholder {
+form fieldset .error, form fieldset .error::placeholder {
   color: red;
   display: inline;
 }
@@ -739,6 +740,54 @@ footer a {
   font-size: 1.5em;
 }
 
+[data-custom-class='body'],
+[data-custom-class='body'] * {
+  background: transparent !important;
+}
+
+[data-custom-class='title'],
+[data-custom-class='title'] * {
+  font-family: Arial !important;
+  font-size: 26px !important;
+  color: #000000 !important;
+}
+
+[data-custom-class='subtitle'],
+[data-custom-class='subtitle'] * {
+  font-family: Arial !important;
+  color: #595959 !important;
+  font-size: 14px !important;
+}
+
+[data-custom-class='heading_1'],
+[data-custom-class='heading_1'] * {
+  font-family: Arial !important;
+  font-size: 19px !important;
+  color: #000000 !important;
+}
+
+[data-custom-class='heading_2'],
+[data-custom-class='heading_2'] * {
+  font-family: Arial !important;
+  font-size: 17px !important;
+  color: #000000 !important;
+}
+
+[data-custom-class='body_text'],
+[data-custom-class='body_text'] * {
+  color: #595959 !important;
+  font-size: 14px !important;
+  font-family: Arial !important;
+}
+
+[data-custom-class='link'],
+[data-custom-class='link'] * {
+  color: #3030F1 !important;
+  font-size: 14px !important;
+  font-family: Arial !important;
+  word-break: break-word !important;
+}
+
 @media screen and (min-width: 850px) {
   header h1 {
     font-size: 3rem;
@@ -778,19 +827,19 @@ footer a {
 }
 
 @media screen and (min-width: 500px) {
-  form {
+  form fieldset {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  form * {
+  form fieldset * {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  form label {
+  form fieldset label {
     max-width: 20%;
   }
 }

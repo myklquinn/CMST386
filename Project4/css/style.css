@@ -535,7 +535,6 @@ main .discoverLink:hover, main .discoverLink :focus {
   border-color: var(--palette-color4);
   -webkit-box-shadow: 0 0 10px var(--palette-color3);
           box-shadow: 0 0 10px var(--palette-color3);
-  mix-blend-mode: screen;
 }
 
 main .discoverLink:hover a, main .discoverLink :focus a {

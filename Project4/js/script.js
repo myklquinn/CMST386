@@ -1,5 +1,6 @@
 var sB = document.querySelector("input[type='submit']")
 var footer = document.querySelector(".footerContainer")
+var menu = document.querySelector("#menuList")
 
 var now = new Date()
 now = now.toDateString() + " " +  now.toLocaleTimeString()
@@ -58,3 +59,6 @@ submitForm = function(evt) {
 }
 
 if (sB){ sB.addEventListener("click", submitForm, false) }
+menu.addEventListener("click", evt=>{
+    evt.target.classList.toggle(".menuVisible")
+}, false)

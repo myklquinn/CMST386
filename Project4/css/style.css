@@ -497,7 +497,6 @@ main .addToCart p:hover, main .addToCart p :focus {
   border-color: var(--palette-color2);
   -webkit-box-shadow: 0 0 10px var(--palette-color1);
           box-shadow: 0 0 10px var(--palette-color1);
-  mix-blend-mode: screen;
 }
 
 main .addToCart p:active {
